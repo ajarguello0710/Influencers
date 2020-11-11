@@ -1,0 +1,35 @@
+<div id="contenedor" class="d-flex">
+    <div class="m-auto d-flex flex-column">
+        <div class="mx-auto mb-4">
+            <a href="https://iinsightapp.com/">
+                <svg preserveAspectRatio='xMinYMin meet' viewBox="0 0 554 557" width="150px" class="logo">
+                    <use xlink:href='assets/images/logo.svg#logo'></use>
+                </svg>
+            </a>
+        </div>
+        <form name="form" class="mx-auto">
+            <div class="message">{{message}}&nbsp;</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><input name="name" [(ngModel)]="form.name" type="text" class="form-control"
+                                placeholder="Correo"></td>
+                    </tr>
+                    <tr>
+                        <td><input name="password" [(ngModel)]="form.password" type="password" class="form-control"
+                                placeholder="Clave"></td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex">
+                            <button type="submit" (click)="login()" class="btn btn-primary w-100" 
+                            style="border: 1px solid #222!important;">
+                                Entrar
+                                <span *ngIf="loading "class="spinner-border spinner-border-sm" role="status"><span class="sr-only">Loading...</span></span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+.dropdown-toggle.circle::after {
+    content: none;
+}
+.circle:hover {
+    color: var(--text) !important;
+    svg {
+        fill: var(--text) !important;
+    }
+}

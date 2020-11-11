@@ -1,0 +1,6 @@
+{
+    "/medios-api": {
+      "target": "",
+      "secure": false
+    }
+  }

@@ -1,0 +1,7 @@
+<is-header *ngIf="isLogged"></is-header>
+<div class="d-flex">
+  <is-menu id="includeMenu" class="bar bg-white d-print-none" *ngIf="isLogged"></is-menu>
+  <div id="includeContent" class="content" [ngClass]="{'ml-0':!isLogged}">
+    <router-outlet></router-outlet>
+  </div>
+</div>

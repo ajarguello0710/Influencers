@@ -1,0 +1,17 @@
+<div class="header row bg-white border-bottom m-0 pt-2">
+    <div class="col m-0">
+        <svg preserveAspectRatio='xMinYMin meet' viewBox="0 0 554 557" width="40px" class="logo">
+            <use xlink:href='assets/images/icons.svg#logo'></use>
+        </svg>
+    </div>
+    <div class="col">
+        <div ngbDropdown class="float-right ml-2">
+            <a ngbDropdownToggle class="circle" href="javascript:void(0)" id="dduser" data-placement="bottom"
+                title="{{user.name}}">{{user.initials}}</a>
+            <div ngbDropdownMenu aria-labelledby="dduser">
+                <button ngbDropdownItem [routerLink]="['profile']">Perfil</button>
+                <button ngbDropdownItem (click)="logout()">Salir</button>
+            </div>
+        </div>
+    </div>
+</div>
